@@ -1,0 +1,7 @@
+model: "transformer"  # Model architecture
+batch_size: 32  # Batch size per GPU
+num_gpus: 4  # Number of GPUs
+pipeline_parallelism: True  # Enable pipeline parallelism
+zero_redundancy: True  # Enable ZeRO optimization
+sharding_strategy: "auto"  # Sharding strategy (auto, manual)
+communication_pattern: "ring"  # Communication pattern (ring, tree)
